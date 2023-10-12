@@ -1,0 +1,68 @@
+<!-- 
+    Aula 2 Elementos básicos 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=320px, initial-scale=1.0" />
+    <title>Aula 1 - Estrutura HTML</title>
+  </head>
+
+  <body>
+    <!-- 
+        Oque é um elemento? 
+        Elemento é uma estrutura html que pode ser constituido por uma tag de abertura e uma tag de fechamento, mas ele também pode ser um elemento vazio
+        quando o seu fechamento é automatico.
+        Um elemento vazio não permite você insira nada dentro dele, ele existe sozinho e ele não contém ninguém 
+        Um elemento do tipo containner permite que você adicione outros elementos dentro dele como um paragrafo dentro de outro paragrafo. Ele tem que ter uma tag de abertura e uma de fechamento. 
+    -->
+    <div>
+      <p>Isso é um paragrafo</p>
+      <br />
+      <p>Outro paragrafo</p>
+    </div>
+
+    <!-- 
+        Atributos: são caracteristicas que podemos dar as tags, a chave de atributo "type" por exemplo especifica que a entrada do input é de texto. 
+        Atributos autocontidos ou booleanos. disabled é um atribudo booleano que desativa o input
+    -->
+    <input type="text" />
+    <input type="text" disabled />
+
+    <!-- 
+        Titulos, links e texto: 
+        Os títulos são tags, elementos que utilizamos para definir hhierarquia e a estrutura do conteúdo da página web.
+        Os titulos eles vão de um grau de destaque 1 (Altamente prioritarios) até o 6 (baixa prioridade)
+        H1 > H2 > H3 > H4 > H5 > H6
+    -->
+    <h1>Esse é um título de alta prioridade (h1)</h1>
+    <h2>
+      Esse é um titulo com uma prioridade menor que a anterior (h2) <br />
+      E agora eu estou colocando uma quebra de linha nele
+    </h2>
+    <h6>Esse é o titulo de menor prioridade (h3)</h6>
+
+    <!--
+      Um link ou hiperlink 
+      É uma conexão de um recurso da web para outro. 
+      Os links são elementos HTML que utilizam a tag "<a></a>".
+      Para especificar o endereço do recurso que desejamos acessar o link, utilizamos o atributo "href".
+      Atravez dos links também podemos:
+      iniciar o aplicativo de e-mail já com informações configuradas;
+      iniciar o aplicativo responsavel pela realizações de ligações em smartphones;
+      iniciar o apicativo de localização
+    -->
+    <a href="https://github.com/feitosajr1" target="_blank">
+      <p>Esse é um paragrafo dentro de um link que leva ao meu GitHub</p>
+    </a>
+    <!--
+      A tag iframe é uma tag muito importante do html por que ele permite que a gente abra outra pagina dentro da sua página 
+      Por exemplo um site de pagamento que usa o site da operadora de pagamento, então é renderizada li dentro do site mesmo. 
+    -->
+    <a href="https://g1.globo.com/" target="Translate">
+      <p>Link o G1 globo</p>
+    </a>
+    <iframe name="Translate" src="" width="400px" height="400px"></iframe>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!-- 
+    Aula 2 Elementos básicos 
+    Criando elementos de estilo 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=320px, initial-scale=1.0" />
+    <title>Aula 1 - Estrutura HTML</title>
+    <!-- 
+      Por fim a maneira mais comum de criar estilos é criando um arquivo separado CSS e referenciando seu local na head por um link
+    -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!--
+      Já dentro da head se abre a tag <style></style> para dentro dela usar o Id definido no elemento que se quer personalizar 
+      Para selecionar o elemento para personalizar é muito parecido com o CSS em si. Pode se usar a tag{} ou #Id
+    <style>
+      a {
+        font-size: 45px;
+      }
+    </style>
+    -->
+  </head>
+
+  <body>
+    <!--
+      Para usar o Css dentro do html primeiramente precisa usar o atributo "style" na tag/containner você deseja personalizar.
+      Dentro do atributo colocar os elementos e valores que deseja acrescentar. 
+      Outra forma de fazer estilo também desntro do html seria colcoar dentro da tag head criando a agora tag style, basta que o containner que deseja personalizar tenha um id 
+    -->
+    <a
+      id="link-gigante"
+      style="color: red"
+      href="https://github.com/feitosajr1"
+      target="_blank"
+    >
+      <p id="teste">Isso é um parágrafo</p>
+    </a>
+
+    <div>
+      <p>Isso é um paragrafo</p>
+      <p>Outro paragrafo</p>
+    </div>
+  </body>
+</html>
