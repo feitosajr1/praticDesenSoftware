@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atributos de uma tabela</title>
+  </head>
+  <!-- Existem alguns atributos que podem ser usados nas tabelas (<table></table>)
+height: permite modificar a altura de uma tabela. de uma linha, ou célula;
+width: Permite modificar a largur a ou célula de uma tabel; 
+cellspacing: permite configurar o espaçamento entre as células;
+cellpadding: permite configurar um espaçamento entre as bordas da célula e seu conteúdo
+align: permite alinhar o texto dentro da célula horizontalmente
+valign: permite alinhar o texto verticalmente -->
+  <body>
+    <table width="50%">
+      <thead align="center">
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Quantidade</th>
+        </tr>
+      </thead>
+
+      <tbody height="100px" valign="center" align="center">
+        <tr>
+          <td width="100px">Id</td>
+          <td width="100px">Produto 1</td>
+          <td width="100px">1</td>
+        </tr>
+        <tr>
+          <td>Id</td>
+          <td>Produto 2</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">Qauntidade</td>
+          <td>2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

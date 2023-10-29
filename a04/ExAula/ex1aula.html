@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+  </head>
+  <!-- As tabelas são definidas dentro da tag <table></table> usando outras tags que definem o titulo das colunas, as linhas e o conteúdo das células
+  A tag <thead></thead> define a linha que contém o titulo das colunas. 
+  A tag <tbody></tbody> define as linhas e colunas que estão dentro do corpo da tabela
+  A tag <th></th> define o conteúdo dos titúlos da coluna 
+  a tag <tfoot></tfoot> define as linhas do rodapé 
+  A tag <tr></tr> define uma linha no corpo da tabela
+  A tag <td></td> define o conteúdo na célula no corpo da tabela 
+  O atributo colspan="" indica a quantidade de celulas que uma informação vai ocupar
+  O atributo rowspan="" indica a quantidade de linhas que uma informação vai ocupar -->
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <!--<th></th> é usado para titulos das tabelas -->
+          <th>Nome</th>
+          <th>Quantidadae</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Id</td>
+          <td>Produto 1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Id</td>
+          <td>Produto 2</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">Qauntidade</td>
+          <td>2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

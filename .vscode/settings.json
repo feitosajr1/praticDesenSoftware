@@ -1,7 +1,7 @@
 {
   // Editor
   "editor.wordWrap": "on" /*Quebra de linha ao final da tela*/,
-  "editor.lineHeight": 19 /*Espaçamento entre as linhas*/,
+  "editor.lineHeight": 20 /*Espaçamento entre as linhas*/,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true, //Realça a linha entre o inicio e fim de uma tag
   "editor.minimap.enabled": false /*Desativa o minimapa da lateral*/,

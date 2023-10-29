@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propriedades de uma tabela</title>
+  </head>
+  <!-- border: serve para adicionar uma borda na tabela; 
+    As bordas também podem ser desenhadas com cores tem usando as tags
+    bordercolordark para cores escuras
+    bordercolorlight para cores claras 
+    bordercolordark informa a cor da borda escura, enquanto bordercolorlight a cor da borda clara. As cores claras e escuras da borda, juntas, formam a cor da borda, dando um efeito de sombra 
+    bgcolor muda a cor do background das células 
+    background também muda a cor mas ele é uma tag com mais funcionalidades, como efeito de uma cor ou imagens de fundo da tabela -->
+
+  <body>
+    <table width="50%" border="black">
+      <thead align="left" bgcolor="cian">
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Quantidade</th>
+        </tr>
+      </thead>
+
+      <tbody height="100px" valign="center" align="center" bgcolor="green">
+        <tr>
+          <td width="100px">Id</td>
+          <td width="100px">Produto 1</td>
+          <td width="100px">1</td>
+        </tr>
+        <tr>
+          <td>Id</td>
+          <td>Produto 2</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+
+      <tfoot bgcolor="red">
+        <tr>
+          <td colspan="2">Qauntidade</td>
+          <td>2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
