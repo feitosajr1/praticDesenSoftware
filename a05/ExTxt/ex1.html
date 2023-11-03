@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criando um formulário</title>
+  </head>
+  <body>
+    <!-- O elemento  form é o principal. Tudo o que deve ser incluído no formulário está escrito nele. Exemplo: -->
+    <form name="“form”" method="“post”" action="“local_para_onde_sera_chamado”">
+      … conteúdo do formulário …
+    </form>
+    <br />
+
+    <!-- O atributo action se refere ao “programa” que deve ser executado no formulário. Podem ser scripts, e-mail ou outras coisas. Exemplos:
+Ao ser executado o formulário chama um arquivo enviaEmail.php -->
+    <form name="“form_pesquisa”" method="“get”" action="“enviaEmail.php”">
+      Conteúdo do form
+    </form>
+    <br />
+
+    <!-- O conteúdo do formulário será enviado por e-mail para  juniorfeito2016@gmail.com -->
+    <form name="form_envio" method="post" action="juniorfeito2016@gmail.com">
+      Conteúdo do form
+    </form>
+    <br />
+
+    <!--Camps do formulário-->
+
+    <!-- Um campo de texto de linha única é indicado como o elemento "input" e ele
+    pode ter diferentes tipos. O atrubuto "type" é quem define esses tipos. O
+    valor "text" indica um campo de texto por exemplo. -->
+    <form action="mailto: contato@descomplica.com.br">
+      <input name="nome_campo" type="text" />
+    </form>
+    <br />
+
+    <!--També podemos definir um valor padrão para iniciar no form com o atributo "value"-->
+    <form action="mailto: contato@descomplica.com.br">
+      <input value="exemplo@comoFica.com" name="email" type="text" />
+    </form>
+    <br />
+
+    <!--Para especificar um valor em um campo que ainda não foi preenchido se o usa o atributo placeholder-->
+    <form action="mailto: juniorfeito2016@gmail.com">
+      <input placeholder="informe o e-mail" name="email" type="text" />
+    </form>
+    <br />
+
+    <!--Comprimento dos campos-->
+
+    <!-- O atributo "size" determina o comprimento do respectivo campo de texto, pode ser usado qualquer número inteiro como valor. -->
+    <form action="mailto: juniorfeito2016@gmail.com">
+      <input size="20" name="nome" type="text" />
+      <input size="3" name="idade" type="text" />
+    </form>
+    <br />
+
+    <!--O comprimento máximo você pode usar o atributo "maxlength" para especificar o comprimento máximo do campo-->
+    <form action="mailto: juniorfeito2016@gmail.com">
+      <input
+        maxlength="10"
+        value="Você pode inserir 10 letras"
+        name="nome"
+        type="text"
+      />
+      <input
+        maxlength="34"
+        value="Você pode inserir 34 letras"
+        name="sobrenome"
+        type="text"
+      />
+    </form>
+    <br />
+
+    <!--Ao inserir um campo de senha nenhuma letra ou número é exibido, apenas o asterisco, e para criar um capo de senha usamos o atributo type com o valor password-->
+    <form action="mailto: juniorfeito2016@gmail.com">
+      <input name="senha" type="password" size="15" placeholder="senha" />
+    </form>
+    <br />
+
+    <!--Campo com opções-->
+
+    <!-- Os campos de texto com várias linhas de tamanho são anotados com o atributo textarea. Exemplo: -->
+    <form action="mailto:juniorfeito2016@gmail.com">
+      <textarea
+        name="descricao"
+        cols="30"
+        rows="3"
+        placeholder="Campo com várias linhas"
+      >
+      </textarea>
+    </form>
+    <br />
+
+    <!-- Para você criar várias opções fixas para que sejam selecionadas é usado o atributo "campobox" e dentro dele é expecificado as opções usando o atributo "select" para abrir as opções e "option" para indicar as opções  -->
+    <form action="mailto:juniorfeito2016@gmail.com">
+      <select>
+        <option>Arroz</option>
+        <option>Feijão</option>
+        <option>Açucar</option>
+      </select>
+    </form>
+    <br />
+
+    <!-- Com o option é possível usar o value para determinar o valor da opção. O valor da entrada selecionada é então enviado como o valor deste elemento quando o formulário é enviado - todos os outros valores não são. Exemplo:-->
+    <form action="mailto:juniorfeito2016@gmail.com">
+      <select>
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+      </select>
+    </form>
+    <br />
+
+    <!--Podemos determinar a altura do select usando o size. o valor que inserimos no atributo size um inteiro que indica o número de linhas sobre o campo a extender-->
+    <form action="mailto:juniorfeito2016@gmail.com">
+      <select size="3">
+        <option>Anna</option>
+        <option>Berta</option>
+        <option>Carolin</option>
+        <option>Carlos</option>
+        <option>Junior</option>
+        <option>Feitosa</option>
+      </select>
+    </form>
+    <br />
+
+    <!--Também podemos fazer uma seleção antecipadamente -->
+    <form action="mailto:juniorfeito2016@gmail.com">
+      <select size="1">
+        <option selected>20</option>
+        <option>20</option>
+        <option>30</option>
+      </select>
+    </form>
+    <br />
+
+    <!--Também é possivel criar um campo com uma seleção multipla com o atributo multiple-->
+    <form action="mailto:juniorfeito2016@gmail.com">
+      <select multiple size="3">
+        <option selected>Uno</option>
+        <option>Compass</option>
+        <option>Renegade</option>
+        <option>Gol</option>
+        <option>Onix</option>
+        <option>SW4</option>
+      </select>
+    </form>
+    <br />
+
+    <!-- As opções podem ser combinadas em grupos. O optgroup é usado para isso .Exemplo: -->
+    <form action="mailto:juniorfeito2016@gmail.com">
+      <select>
+        <optgroup label="cozinha">
+          <option>geladeira</option>
+          <option>mesa</option>
+          <option>potes</option>
+        </optgroup>
+
+        <optgroup label="sala">
+          <option>TV</option>
+          <option>sofá</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
