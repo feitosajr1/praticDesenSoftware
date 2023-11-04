@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criando um formulário continuação</title>
+  </head>
+  <body>
+    <!--Com o atributo fieldset nos podemos colcoar os campos dentro de um quadro, esse atributo serve para separar visualmente e oganizar seções. -->
+    <fieldset>
+      <legend>Formulário</legend>
+      <input type="text" />
+      <input type="submit" />
+    </fieldset>
+    <br />
+
+    <!--Quando a gente configura o placeholder no formulário o navegador sugeri preenchimento automático de acordo com oque está no placeholder-->
+    <fieldset>
+      <legend>Formulário</legend>
+      <form action="mailto:juniorfeito2016@gmail.com">
+        <input type="text" placeholder="Nome" />
+        <br /><br />
+        <input type="text" placeholder="e-mail" />
+        <input type="submit" />
+      </form>
+    </fieldset>
+    <br />
+
+    <!-- Às vezes, é necessário usar elementos de formulário invisíveis para não “comprometer” o design e a aparência da página. -->
+    <form>
+      <input type="hidden" value="browser name" />
+      <input type="hidden" value="text" />
+      ...
+    </form>
+    <br />
+
+    <!--Para criar campos de e-mail para preencher atomáticamente e realizar uma pré visualização dos e-mails se usa o valor e- mail no atributo type-->
+    <fieldset>
+      <legend>Preenchimento automático de e-mail</legend>
+      <form action="">
+        <input type="email" placeholder="e-mail" />
+        <input type="submit" />
+      </form>
+    </fieldset>
+    <br />
+
+    <!--Para datas nos usamos o valor date em type -->
+    <fieldset>
+      <legend>Modelos de datas</legend>
+      <form action="">
+        <!--Datas padrão-->
+        <input type="date" />
+        <!--month "novembro de 2023"-->
+        <input type="month" />
+        <!--week Semana 44, 2023-->
+        <input type="week" />
+        <!--number para seleção de números-->
+        <input type="number" placeholder="Apenas números" />
+        <!--Range margem para números-->
+        <input
+          type="renge"
+          placeholder="Renge de números números"
+        /><br /><br />
+        <!--tel para números de telefone-->
+        <input type="tel" placeholder="n° de telefone" />
+        <!--Para site usa o url-->
+        <input type="url" placeholder="sites" />
+        <!--Cores-->
+        <input type="color" />
+      </form>
+    </fieldset>
+    <br />
+
+    <!--Botões sempre são usados para acionar uma requisição
+    Os botões de "submit" também servem para submeter o fomrulário (preenchido), usamos no input o type com o valor submit para transformar o campo em um botão de submeter -->
+    <input type="submit" name="env" value="Enviar" />
+  </body>
+</html>
