@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <p><strong>Digite o seu nome:</strong></p>
+    <p><input type="text" name="nomeUsuario" value="" id="nomeUsuario" /></p>
+    <p><strong>Digite a sua senha:</strong></p>
+    <p>
+      <input type="password" name="senhaUsuario" value="" id="senhaUsuario" />
+    </p>
+    <p><strong>Digite o seu e-mail:</strong></p>
+    <p><input type="email" name="emailUsuario" value="" id="emailUsuario" /></p>
+    <p><strong>Digite a sua faixa etária:</strong></p>
+    <p>
+      Faixa 1 (18-28):
+      <input type="radio" name="faixaEtaria" value="1" id="faixaEtaria" />
+    </p>
+    <p>
+      Faixa 2 (29-39):
+      <input type="radio" name="faixaEtaria" value="2" id="faixaEtaria" />
+    </p>
+    <p>
+      Faixa 3 (40-50):
+      <input type="radio" name="faixaEtaria" value="3" id="faixaEtaria" />
+    </p>
+    <p>
+      Faixa 4 (50-60):
+      <input type="radio" name="faixaEtaria" value="4" id="faixaEtaria" />
+    </p>
+    <p>
+      Faixa 5 (Maiores de 60 anos):
+      <input type="radio" name="faixaEtaria" value="5" id="faixaEtaria" />
+    </p>
+    <p><strong>Renda mensal familiar:</strong></p>
+    <select name="rendaFamiliar" id="rendaFamiliar">
+      <option value="1">Até R$ 2,9 mil</option>
+      <option value="2">entre R$ 2,9 mil e 7,1 mil</option>
+      <option value="2">entre R$ 7,1 mil e 222 mil</option>
+      <option value="2">superior a R$ 22 mil</option>
+    </select>
+    <br /><br />
+    <button>Enviar</button>
+  </body>
+</html>
