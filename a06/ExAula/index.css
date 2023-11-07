@@ -1,0 +1,25 @@
+/* Formas de referenciar elementos do HTML no CSS */
+
+/* Quando referenciamos apenas pelo nome, nos estamos selecionando todas as tags que de mesmo tipo */
+/* nivel de seleção hierárquivo: 1 */
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+/* Quando usamos o ponto, nos estamos selecioando todas as classes com esse mesmo nome.  */
+/* nivel de seleção: 10 */
+.div {
+  background: orange;
+}
+
+/* E quando usamos a hastag nso estamos referenciando todas as classes que possuem esse nome.
+Por ser uma folha de estilo, o CSS também segue a linha de hierarquia por ordem de atribuição, oque vale é o ultimo valor atribuido à tag. Se a seleção for feita no html ele ]tem a hieraquia maior
+Quando as classes são combinadas os valores de nivel são somadas */
+
+/* nivel de seleção: 100 */
+#div,
+#div2 {
+  background: blue;
+}
