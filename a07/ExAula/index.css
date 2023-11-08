@@ -1,0 +1,38 @@
+/* Tipo de fontes e família de fontes
+font-weight: define o peso da fonte
+font-style: especifica o estilo da fonte
+font-family: descreve a fonte ou a família da fonte.  */
+
+/* h1 {
+  font-family: Arial, "Times New Roman", serif;
+} */
+
+/* h1 {
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Arial";
+} */
+
+/* h1 {
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Arial";
+} */
+
+h1 {
+  font-weight: normal;
+  font-style: oblique;
+  font-family: "Arial";
+}
+/* a propriedade font combina todas as outras propriedades, a vantagem é que apenas os valores devem ser mencionados. */
+/* p {
+  font: italic bold 11pt/12pt Arial;
+} */
+
+/* p {
+  font: bolder 120% serif;
+} */
+
+p {
+  font: oblique small-caps bolder 13px/120% ‘Times New Roman’, Arial, serif;
+}
