@@ -1,7 +1,11 @@
 /* body {
   background-color: rgb(151, 146, 146);
 } */
-
+.test {
+  display: flex;
+  flex-direction: column;
+  background-color: cadetblue;
+}
 .texto {
   text-align: center;
   text-decoration: underline wavy red;
@@ -15,6 +19,18 @@
   font-style: italic;
   font-variant: small-caps;
   line-height: 100px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background-color: turquoise;
+  height: 100vh;
+}
+
+.content {
+  background-color: tomato;
+  flex-grow: 0.9;
 }
 
 .navbar {
