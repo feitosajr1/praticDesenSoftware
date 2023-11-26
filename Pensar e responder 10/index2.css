@@ -1,0 +1,13 @@
+body {
+  background-color: cadetblue;
+}
+.test {
+  display: flex;
+  flex-direction: column;
+}
+.texto {
+  text-align: center;
+
+  letter-spacing: 10px;
+  text-shadow: 10px 10px 10px blue;
+}
