@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praticando o uso do BootStrap</title>
+    <!--Link do CSS caso precise-->
+    <link rel="stylesheet" href="" type="text/css" />
+    <!--Link do BootStrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--
+        Cartões: O cartão é muito utilizado em sites para apresentar produtos, preços de planos de contratação e etc. Ele inclui opções de cabeçalhos e rodapés, cores de fundo e opções de exibição variadas. Para incluir um cartão é bastante simples. Em uma div adicionamos classe base .card, enquanto o conteúdo pode ser colocado dentro do .card-body. O exemplo abaixo apresenta como criar um cartão com uma imagem, misturado com algum conteúdo de texto e um botão.
+    -->
+    <div
+      class="card"
+      style="width: 300px; align-items: center; background-color: grey"
+    >
+      <img
+        src="src/3x4(2).jpg"
+        alt="..."
+        class="card-img-top"
+        style="width: 80px"
+      />
+      <div class="card-body text-center">
+        <h5 class="card-title" style="color: rgb(199, 205, 211)">Feitosa Jr</h5>
+        <p class="card-text" style="color: rgb(199, 205, 211)">Nome do Cargo</p>
+        <a
+          href="https://www.linkedin.com/in/feitosa-junior-668ba0257/"
+          class="btn btn-primary"
+          target="_blank"
+          style="
+            height: 25px;
+            width: 80px;
+            padding: 3px 3px;
+            font-size: 12px;
+            background-color: rgb(0, 0, 0);
+            border-style: none;
+            color: aliceblue;
+          "
+          >Ver mais</a
+        >
+      </div>
+    </div>
+
+    <!--Cartão somente o corpo: Podemos simplesmente usar o ".card" com ".card-body" sempre que precisar criar um cartão simples.-->
+    <div class="card">
+      <div class="card-body">Cartão simples</div>
+    </div>
+
+    <!--Cartão com títulos, texto e links: Além disso, podemos colocar títulos e links dentro do cartão junto com o texto-->
+    <div class="card" style="width: 300px">
+      <div class="card-body">
+        <h5 class="card-title">João Rodrigues.</h5>
+        <h6 class="card-subtitle mb-3 text-muted">Brasil, Rio de Janeiro.</h6>
+        <p class="card-text">Nasceu no bairro do leme em 1943.</p>
+        <a href="#" class="card-link" style="text-decoration: none"
+          >Saiba mais</a
+        >
+      </div>
+    </div>
+
+    <!--Para cartão com cabeçalho e rodapé, podemos usar as classes .card-header e .card-footer.-->
+    <div class="card text-center">
+      <div class="card-header">Analista Senior.</div>
+      <div class="card-body">
+        <h5 class="card-title">Empresa de cosméticos.</h5>
+        <p class="card-text">
+          Trabalhamos no ramo de cosméticos a mais de 20 anos.
+        </p>
+        <a href="#" class="btn btn-primary" target="_blank"
+          >Venha trabalhar com a gente</a
+        >
+      </div>
+      <div class="card-footer text-muted">Somos um grande time!</div>
+    </div>
+  </body>
+</html>
