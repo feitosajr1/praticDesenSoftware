@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Praticando o uso do BootStrap</title>
+    <title>Praticando o uso do BootStrap (tipos de cartões)</title>
     <!--Link do CSS caso precise-->
     <link rel="stylesheet" href="" type="text/css" />
     <!--Link do BootStrap-->
@@ -80,5 +80,109 @@
       </div>
       <div class="card-footer text-muted">Somos um grande time!</div>
     </div>
+
+    <!--Também podemos colocar Grupos de Listas no Cartão junto com outros tipos de conteúdo-->
+    <div class="card" style="width: 300px">
+      <div class="card-header">Frutas</div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Mamão</li>
+        <li class="list-group-item">Banana</li>
+        <li class="list-group-item">Maça</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Saiba mais</a>
+        <a href="#" class="card-link">Compartilhar</a>
+      </div>
+    </div>
+
+    <!--Lista de itens com ação. -->
+    <div class="list-group text-center">
+      <a
+        href="#"
+        class="list-group-item list-group-item-action active"
+        aria-current="true"
+        >Essa é uma lista de itens usando BootStrap</a
+      >
+      <a
+        href="https://www.linkedin.com/in/feitosa-junior-668ba0257/"
+        class="list-group-item list-group-item-action"
+        target="_blank"
+        >linkedin</a
+      >
+      <a
+        href="https://github.com/feitosajr1"
+        class="list-group-item list-group-item-action"
+        target="_blank"
+        >GitHub</a
+      >
+      <a
+        href="https://www.facebook.com/junior.feitosa.547/"
+        class="list-group-item list-group-item-action"
+        target="_blank"
+        >Facebook</a
+      >
+      <a
+        class="list-group-item list-group-item-action disabled"
+        aria-disabled="true"
+        >Link desativado</a
+      >
+    </div>
+
+    <!--Lista de itens com caixa de marcação-->
+    <ul class="list-group text-center">
+      <li class="list-group-item active">Essa é uma lista com CheckBox</li>
+      <li class="list-group-item">
+        <input
+          class="form-check-input me-1"
+          type="checkbox"
+          value=""
+          id="firstCheckboxStretched"
+        />
+        <label
+          class="form-check-label stretched-link"
+          for="firstCheckboxStretched"
+          >Banana</label
+        >
+      </li>
+      <li class="list-group-item">
+        <input
+          class="form-check-input me-1"
+          type="checkbox"
+          value=""
+          id="secondCheckboxStretched"
+        />
+        <label
+          class="form-check-label stretched-link"
+          for="secondCheckboxStretched"
+          >Pêra</label
+        >
+      </li>
+      <li class="list-group-item">
+        <input
+          class="form-check-input me-1"
+          type="checkbox"
+          value=""
+          id="thirdCheckboxStretched"
+        />
+        <label
+          class="form-check-label stretched-link"
+          for="thirdCheckboxStretched"
+          >Maçã</label
+        >
+      </li>
+      <li class="list-group-item">
+        <input
+          class="form-check-input me-1"
+          type="checkbox"
+          value=""
+          id="fourthCheckboxStretched"
+        />
+        <label
+          class="form-check-label stretched-link"
+          for="fourthCheckboxStretched"
+          >Goiaba</label
+        >
+      </li>
+    </ul>
   </body>
 </html>
