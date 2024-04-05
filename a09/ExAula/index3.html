@@ -4,6 +4,7 @@ O Modal é uma caixa flutuante na tela que pode ser usando semelhante a um alert
 O modal vai abri uma janela em destaque, escurecendo o fundo e desativando todos os elementos do background, 
 A forma do Modal independe mas ele lembra um card e pode ter titulo, corpo, footer, botões. 
 O modal precisa ter 3 ações para ser fechado, fora do card, no X ou algum botão de ação. 
+Carousel - Um componente de apresentação de slides para percorrer elementos — imagens ou slides de texto
 -->
 <html lang="en">
   <!--Versão desenvolvida durante as aulas-->
@@ -24,7 +25,7 @@ O modal precisa ter 3 ações para ser fechado, fora do card, no X ou algum bot�
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-  <body>
+  <body style="background-color: rgb(230, 230, 240)">
     <nav
       class="navbar bg-dark border-bottom border-body navbar-expand"
       data-bs-theme="dark"
@@ -68,21 +69,30 @@ O modal precisa ter 3 ações para ser fechado, fora do card, no X ou algum bot�
         <div class="col-4">
           <div class="card py-4 px-2">
             <div class="card-body">
-              <h3 class="card-title small text-muted"><b>FREE </b></h3>
+              <h3 class="card-title small text-muted"><b>FREE</b></h3>
               <p class="card-text">
-                <span class="display-6"><strong>R$0</strong></span>
+                <span class="display-6"
+                  ><strong><strong>$0</strong></strong></span
+                >
                 <span class="text-muted">/mo</span>
               </p>
               <ul class="list-unstyled">
                 <li class="mb-2">
-                  <i class="bi bi-check"></i>
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i>
                   <strong>1 user</strong>
                 </li>
-                <li class="mb-2"><i class="bi bi-check"></i>5GB storage</li>
                 <li class="mb-2">
-                  <i class="bi bi-check"></i>Unlimited public projects
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i>5GB
+                  storage
                 </li>
-                <li class="mb-2"><i class="bi bi-check"></i>Community acess</li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  >Unlimited public projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  >Community acess
+                </li>
                 <li class="mb-2 text-muted">
                   <i class="bi bi-x"></i>Unlimited private projects
                 </li>
@@ -98,7 +108,7 @@ O modal precisa ter 3 ações para ser fechado, fora do card, no X ou algum bot�
               </ul>
               <a
                 href="#"
-                class="btn btn-primary w-100"
+                class="btn btn-outline-primary w-100"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
                 >Choose plan</a
@@ -143,6 +153,104 @@ O modal precisa ter 3 ações para ser fechado, fora do card, no X ou algum bot�
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card py-4 px-2">
+            <div class="card-body">
+              <h3 class="card-title small text-muted">
+                <i class="bi bi-star-fill" style="padding: 2px; color: gold"></i
+                ><b>PRO</b>
+              </h3>
+              <p class="card-text">
+                <span class="display-6"
+                  ><strong><strong>R$9</strong></strong></span
+                >
+                <span class="text-muted">/mo</span>
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i>
+                  <strong>1 user</strong>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i>5GB
+                  storage
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  >Unlimited public projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  >Community acess
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i>
+                  Unlimited private projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i>
+                  Dedicated support
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i>
+                  Free linked domain
+                </li>
+                <li class="mb-2 text-muted">
+                  <i class="bi bi-x"></i>Monthly status reports
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary w-100">Choose plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card py-4 px-2">
+            <div class="card-body">
+              <h3 class="card-title small text-muted"><b>ENTERPRISE</b></h3>
+              <p class="card-text">
+                <span class="display-6"
+                  ><strong><strong>$49</strong></strong></span
+                >
+                <span class="text-muted">/mo</span>
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i>
+                  <strong>Unlimited user</strong>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i>5GB
+                  storage
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  >Unlimited public projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  >Community acess
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  >Unlimited private projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  >Dedicated support
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  ><strong>Unlimited</strong> linked domain
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check" style="color: rgb(30, 211, 30)"></i
+                  >Monthly status reports
+                </li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary w-100">Choose plan</a>
             </div>
           </div>
         </div>
