@@ -99,7 +99,144 @@
                   <i class="bi bi-x"></i>Monthly status reports
                 </li>
               </ul>
-              <a href="#" class="btn btn-outline-primary w-100">Choose plan</a>
+              <a
+                href="#"
+                class="btn btn-outline-primary w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Choose plan</a
+              >
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Para continuar preencha os dados
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Formulário</h4>
+                      <p><strong>Digite o seu nome:</strong></p>
+                      <p>
+                        <input
+                          type="text"
+                          name="nomeUsuario"
+                          value=""
+                          id="nomeUsuario"
+                        />
+                      </p>
+                      <p><strong>Digite o seu e-mail:</strong></p>
+                      <p>
+                        <input
+                          type="email"
+                          name="emailUsuario"
+                          value=""
+                          id="emailUsuario"
+                        />
+                      </p>
+                      <p><strong>Digite a sua senha:</strong></p>
+                      <p>
+                        <input
+                          type="password"
+                          name="senhaUsuario"
+                          value=""
+                          id="senhaUsuario"
+                        />
+                      </p>
+
+                      <p><strong>Digite a sua faixa etária:</strong></p>
+                      <p>
+                        Faixa 1 (18-28):
+                        <input
+                          type="radio"
+                          name="faixaEtaria"
+                          value="1"
+                          id="faixaEtaria"
+                        />
+                      </p>
+                      <p>
+                        Faixa 2 (29-39):
+                        <input
+                          type="radio"
+                          name="faixaEtaria"
+                          value="2"
+                          id="faixaEtaria"
+                        />
+                      </p>
+                      <p>
+                        Faixa 3 (40-50):
+                        <input
+                          type="radio"
+                          name="faixaEtaria"
+                          value="3"
+                          id="faixaEtaria"
+                        />
+                      </p>
+                      <p>
+                        Faixa 4 (50-60):
+                        <input
+                          type="radio"
+                          name="faixaEtaria"
+                          value="4"
+                          id="faixaEtaria"
+                        />
+                      </p>
+                      <p>
+                        Faixa 5 (Maiores de 60 anos):
+                        <input
+                          type="radio"
+                          name="faixaEtaria"
+                          value="5"
+                          id="faixaEtaria"
+                        />
+                      </p>
+                      <p><strong>Renda mensal familiar:</strong></p>
+                      <select name="rendaFamiliar" id="rendaFamiliar">
+                        <option value="1">Até R$ 2,9 mil</option>
+                        <option value="2">Entre R$ 2,9 mil e 7,1 mil</option>
+                        <option value="2">Entre R$ 7,1 mil e 222 mil</option>
+                        <option value="2">Superior a R$ 22 mil</option>
+                      </select>
+                      <br />
+                      <br />
+                      <input type="file" name="file" id="file" />
+                      <br />
+                      <br />
+                      <button type="submit" data-bs-dismiss="modal">
+                        Enviar
+                      </button>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
