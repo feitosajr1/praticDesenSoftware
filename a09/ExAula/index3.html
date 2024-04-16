@@ -6,6 +6,9 @@ A forma do Modal independe mas ele lembra um card e pode ter titulo, corpo, foot
 O modal precisa ter 3 ações para ser fechado, fora do card, no X ou algum botão de ação. 
 Carousel - Um componente de apresentação de slides para percorrer elementos — imagens ou slides de texto
 -->
+<!--
+  Carrossel, o carrossel é usado para exibir vários itens na tela, esses itens podem ser exibidos e alternados de forma automática ou de forma manual, seja qual for a escolha, o carrossel é composto por itens e dois botões laterais para passas as páginas do carrossel, neste exemplo irei usar o carrossel que passa os itens automáticos porém possui os botões para passar manualmente.
+-->
 <html lang="en">
   <!--Versão desenvolvida durante as aulas-->
   <head>
@@ -50,20 +53,84 @@ Carousel - Um componente de apresentação de slides para percorrer elementos �
       </div>
     </nav>
 
-    <header class="bg-dark py-5 d-flex flex-column align-items-center">
-      <div class="text-white text-center w-50 mb-2">
-        <h1>Build fast, responsive sites with Bootstrap</h1>
-        <p class="text-white-50">
-          Powerful, extensible, and feature-packed frontend toolkit. Build and
-          customize with Sass, utilize prebuilt grid system and components, and
-          bring projects to life with powerful JavaScript plugins.
-        </p>
+    <header
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="bg-dark py-5 d-flex flex-column align-items-center">
+            <div class="text-white text-center w-50 mb-2">
+              <h1>Build fast, responsive sites with Bootstrap</h1>
+              <p class="text-white-50">
+                Powerful, extensible, and feature-packed frontend toolkit. Build
+                and customize with Sass, utilize prebuilt grid system and
+                components, and bring projects to life with powerful JavaScript
+                plugins.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-outline-light">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="bg-dark py-5 d-flex flex-column align-items-center">
+            <div class="text-white text-center w-50 mb-2">
+              <h1>Build fast, responsive sites with Bootstrap</h1>
+              <p class="text-white-50">
+                Powerful, extensible, and feature-packed frontend toolkit. Build
+                and customize with Sass, utilize prebuilt grid system and
+                components, and bring projects to life with powerful JavaScript
+                plugins.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-outline-light">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="bg-dark py-5 d-flex flex-column align-items-center">
+            <div class="text-white text-center w-50 mb-2">
+              <h1>Build fast, responsive sites with Bootstrap</h1>
+              <p class="text-white-50">
+                Powerful, extensible, and feature-packed frontend toolkit. Build
+                and customize with Sass, utilize prebuilt grid system and
+                components, and bring projects to life with powerful JavaScript
+                plugins.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-outline-light">Learn More</button>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <button class="btn btn-primary">Get Started</button>
-        <button class="btn btn-outline-light">Learn More</button>
-      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </header>
 
     <main class="conteiner-fluid p-5">
